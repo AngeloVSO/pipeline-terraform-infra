@@ -23,7 +23,7 @@ resource "aws_instance" "infra_ec2_posinfnet" {
 
 resource "aws_security_group" "default" {
   name        = "security_group_posinfnet"
-  description = "Grupo de segurança para a instância EC2 PosInfnet"
+  description = "Security group for EC2 instance PosInfnet"
   vpc_id      = "vpc-04d8163c122afdd65"
 
   ingress {
