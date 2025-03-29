@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "infra_ec2_posinfnet" {
-  ami                    = "ami-071226ecf16aa7d96"
+  ami                    = "ami-084568db4383264d4"
   instance_type          = "t2.micro"
   key_name               = "posinfnet-keypair-ssh"
   vpc_security_group_ids = [aws_security_group.default.id]
